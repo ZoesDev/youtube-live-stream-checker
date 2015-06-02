@@ -37,7 +37,7 @@
         
         var json = JSON.parse(result.body);
         if(json.pageInfo.totalResults == 0){
-            // DO SOMETHING
+                        document.getElementById('player').innerHTML = "<h3>There's no live video right now, please try later.</h3>" ;
         } else {
         videoId = json.items[0].id.videoId;
         createIframe();    
